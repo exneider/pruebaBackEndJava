@@ -12,7 +12,7 @@ import org.junit.Test;
  */
 public class CallCenterTest {
 
-	private static final int NUMERO_DE_LLAMADAS = 15;
+	private static final int NUMERO_DE_LLAMADAS = 10;
 	private static final int TIEMPO_MINIMO_LLAMADA = 5;
 	private static final int TIEMPO_MAXIMO_LLAMADA = 10;
 	private static final int TIEMPO_MAXIMO_ESPERA = 20;
