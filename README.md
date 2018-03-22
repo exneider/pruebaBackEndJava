@@ -31,3 +31,15 @@ Existe un call center donde hay 3 tipos de empleados: operador, supervisor y dir
 
 ### Notas sobre la resolución
 ---
+
+. Se creó la clase Dispatcher la cual se encarga de orquestar las llamadas entrantes, esta clase tiene un ExecutorService el cual se le asigna un número de Threads (Permite atender x llamadas concurrentes). Si el número de llamadas es  > al número de Threads estas se encolarán hasta que unos de los Threads esté disponible.
+
+. La clase Dispatcher tiene una cola de prioridad (PriorityBlockingQueue) con la lista de empleados disponibles. Cuando no se tiene ningún empleado disponible la llamada queda en espera hasta de se libere un empleado y responda.
+
+. Cada empleado tiene una prioridad de acuerdo al tipo (Operador, Supervisor y Director). Tienen la responsabilidad de atender una llamada.
+
+### Ejecución 
+---
+. Para ejecutar la simulación de la solución se creó una clase de prueba CallCenterTest.java donde se procesan 10 llamadas concurrentes. Estos valores pueden ser modificados en las constantes.
+  
+
