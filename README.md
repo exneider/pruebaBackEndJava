@@ -22,11 +22,12 @@ Existe un call center donde hay 3 tipos de empleados: operador, supervisor y dir
 
  
 
-# Solución
----
-Descipcion de la solución
+### Solución
+----
 
-- ### Diagrama de clases
+- Diagrama de clases
+
 ![alt text](https://raw.githubusercontent.com/exneider/pruebaBackEndJava/master/callcenterUML.bmp)
 
-## Notas sobre la resolución
+### Notas sobre la resolución
+---
